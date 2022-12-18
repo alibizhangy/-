@@ -43,7 +43,7 @@ string  find_name (string str )
 
 
     }
-    return str_arr; 
+    return str_arr; // this line cannot work 
 }
 int main () 
 {
