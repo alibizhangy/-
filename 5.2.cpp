@@ -13,13 +13,14 @@ string  find_name (string str )
     // this loop show you how much have word 
     // and save the length on the counter 
     for (int i = 0 ; i < str.length() ; i++) {
-        if (str[i]== " ") 
+        if (str[i] == ' ' ) 
         {
             counter++ ; 
         }
     }
     // and definitio array with lenght counter 
-    string  str_arr[counter++] ;
+    counter++ ; 
+    string  str_arr[counter] ;
 
 
     cout << "this string have " << ++counter << "name " << endl; 
@@ -28,7 +29,7 @@ string  find_name (string str )
     for (int i = 0 ; i < str.length() ; i++) 
     {
         pos1 = pos2 ; 
-        if (str[i] == " ")
+        if (str[i] == ' ')
         {
             pos2 = i ; 
             str.erase(pos2,1) ;
